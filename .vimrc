@@ -37,7 +37,8 @@ set smartcase
 
 set encoding=utf-8
 
-nnoremap <C-P> :e **/*
+"nnoremap <C-P> :e **/*
+nnoremap <C-P> :CtrlP
 nnoremap <C-L> :nohl<CR><C-l>
 nnoremap <C-N> :b 
 
