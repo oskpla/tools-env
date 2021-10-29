@@ -52,6 +52,8 @@ endif
 "Plugin setup
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'prabirshrestha/vim-lsp', { 'on': 'LspOn'}
+Plug 'mattn/vim-lsp-settings', { 'on': 'LspOn'}
 call plug#end()
 
 "Notes
