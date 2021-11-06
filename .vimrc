@@ -2,13 +2,8 @@
 if exists('$TMUX')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set t_Co=256
 endif
 
-set termguicolors
-set background=dark
-
-colorscheme desert
 set number
 set laststatus=2
 set noerrorbells
@@ -26,6 +21,7 @@ set wildmode=longest:full,full
 set ignorecase
 set wildignorecase "case insensitive e:
 
+set nowrap
 set autoindent
 set expandtab
 set shiftround
@@ -57,7 +53,20 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 call plug#end()
+
+set termguicolors
+set background=dark
+colorscheme gruvbox
+
+let g:airline_powerline_fonts = 1
+let g:airline_section_warning = ''
+let g:airline_section_error = ''
 
 "Notes
 ":runtime syntax/colortest.vim
