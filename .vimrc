@@ -14,6 +14,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 "tmux fixes
@@ -23,6 +24,7 @@ if exists('$TMUX')
 endif
 
 "Plugin configuration
+let g:ctrlp_max_depth=40
 let g:lightline = {'colorscheme': 'wombat'}
 
 set termguicolors
